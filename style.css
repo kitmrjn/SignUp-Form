@@ -52,10 +52,6 @@ body {
     margin-bottom: 40px;
 }
 
-form {
-
-}
-
 .do-this {
     font-size: 1.5em;
     font-weight: bold;
@@ -168,7 +164,7 @@ input:focus:invalid {
     position: absolute;
     color: beige;
     bottom: 40px;
-    left: 89px;
+    left: 122px;
 }
 
 .credits > a:hover,
