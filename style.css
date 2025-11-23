@@ -95,6 +95,23 @@ fieldset > div > div {
     border: none;
     background-color: rgb(84, 162, 175);
     font-weight: bold;
+    cursor: pointer;
+}
+
+.last-section > button:hover {
+    background-color: rgb(55, 122, 134);
+}
+
+.last-section > button:active {
+    background-color: rgb(35, 82, 90);
+}
+
+.last-section > p >a:hover{
+    color: rgb(55, 122, 134);
+}
+
+.last-section > p >a:active{
+    color: rgb(35, 82, 90);
 }
 
 input,
@@ -111,17 +128,40 @@ a {
     color: inherit;
 }
 
-input:user-valid,
-input:focus:valid {
+input + span {
+    position: relative;
+}
+
+input + span::before {
+    position: absolute;
+    right: -25px;
+    top: -22px;
+}
+
+input:user-valid {
     border: 1px solid green;
+}
+
+input:focus:valid {
+    border: 2px solid green;
 }
 
 input:invalid {
     border: 1px solid red;
 }
 
+input:invalid + span::before{
+    content: "✖";
+    color: red;
+}
+
+input:valid + span::before{
+    content: "✓";
+    color: green;
+}
+
 input:focus:invalid {
-    border: 1px solid maroon;
+    border: 2px solid maroon;
 }
 
 .credits {
