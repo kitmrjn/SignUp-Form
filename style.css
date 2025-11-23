@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse-Bold.woff2') format('woff2'),
+        url('fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.main-section {
+    display: flex;
+    border: 1px solid black;
+}
+
+.bg-image {
+    position: relative;
+    width: 50%;
+}
+
+.stairs-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.form-side  {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.description,
+.you-know {
+    margin-top: 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.you-know {
+    margin-bottom: 40px;
+}
+
+form {
+
+}
+
+.do-this {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+fieldset {
+    font-size: 0.7em;
+    display: flex;
+    padding: 20px 0 20px 0;
+    gap: 50px;
+    margin-bottom: 30px;
+    border: none;
+}
+
+fieldset > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+fieldset > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.last-section {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+}
+
+.last-section > button {
+    margin-bottom: 20px;
+    width: 20%;
+    padding: 7px 0;
+    color: white;
+    border: none;
+    background-color: rgb(84, 162, 175);
+    font-weight: bold;
+}
+
+input,
+button {
+    width: 250px;
+    height: 30px;
+    border-radius: 3px;
+    border: solid 1px rgb(212, 207, 207);
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input:user-valid,
+input:focus:valid {
+    border: 1px solid green;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:focus:invalid {
+    border: 1px solid maroon;
+}
+
+.credits {
+    position: absolute;
+    color: beige;
+    bottom: 40px;
+    left: 80px;
+}
+
+.credits > a:hover,
+.odin-logo-container > a:hover {
+    color: rgb(42, 122, 214);
+}
+
+.odin-logo-container {
+    display: flex;
+    position: absolute;
+    color: white;
+    background-color: rgba(50, 53, 50, 0.5);
+    justify-content: center;
+    bottom: 250px;
+}
+
+.odin-logo-container > img {
+    width: 25%;
+}
+
+.odin-logo-container > a {
+    font-size: 7.5em;
+    font-family: 'Norse';
+}

@@ -3,9 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Sing up Form</title>
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="main-section">
+        <div class="bg-image">
+            <img class="stairs-bg" src="sign-up-form-bg.jpg" alt="sidebar-image">
+            <div>
+                <div class="odin-logo-container">
+                    <img class="odin-logo" src="odin-lined.png" alt="">
+                    <a href="theodinproject.com">ODIN</a>
+                </div>
+                <p class="credits">Photo by 
+                    <a href="https://unsplash.com/@kaprion">Dmitry</a> on 
+                    <a href="https://unsplash.com/photos/small-jellyfish-floating-in-dark-blue-water-9rVE8rOFQZQ">Unsplash</a>
+                </p>
+            </div>
+        </div>
+        <div class="form-side">
+            <p class="description">
+                This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.
+                Sign up <em>now</em> to get started.
+            </p>
+            <p class="you-know">
+                You <em>know</em> you want to.
+            </p>
+
+            <form action="post">
+                <p class="do-this">
+                    Let's do this
+                </p>
+
+                <fieldset>
+                    <div>
+                        <div>
+                            <label for="fname">FIRST NAME *</label>
+                            <input type="text" id="fname" name="fname" required>
+                        </div>
+                        <div>
+                            <label for="email">EMAIL (Optional)</label>
+                            <input type="email" id="email" name="email" >
+                        </div>
+                        <div>
+                            <label for="password">PASSWORD *</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="lname">LAST NAME *</label>
+                            <input type="text" id="lname" name="lname" required>
+                        </div>
+                        <div>
+                            <label for="phone-number">PHONE NUMBER (Optional)</label>
+                            <input type="number" id="phone-number" name="user-number">
+                        </div>
+                        <div>
+                            <label for="Cpassword">CONFIRM PASSWORD *</label>
+                            <input type="password" id="Cpassword" name="confirm-password" required>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="last-section">
+                    <button>Create Account</button>
+                    <p>Already have an account? <a href="">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
