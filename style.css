@@ -128,7 +128,7 @@ input:focus:invalid {
     position: absolute;
     color: beige;
     bottom: 40px;
-    left: 80px;
+    left: 135px;
 }
 
 .credits > a:hover,
